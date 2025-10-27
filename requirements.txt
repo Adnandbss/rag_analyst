@@ -1,0 +1,48 @@
+# --- Frameworks IA & LLM ---
+langchain
+langchain-openai
+langchain-community
+
+# --- Traitement de documents ---
+pypdf
+
+# --- Base de données vectorielle ---
+chromadb
+sentence-transformers # Pour les embeddings open-source
+
+# --- API & Web ---
+fastapi
+uvicorn[standard]
+streamlit
+requests
+
+# --- Base de données ---
+sqlalchemy
+alembic
+
+# --- Monitoring & Métriques ---
+prometheus-client
+structlog
+
+# --- Sécurité ---
+python-jose[cryptography]
+passlib[bcrypt]
+
+# --- Evaluation RAG ---
+ragas
+rouge-score
+
+# --- Agents & Tools ---
+# duckduckgo-search (remplacé par requests + APIs externes)
+
+# --- Hybrid Search ---
+rank-bm25
+
+# --- Cache ---
+diskcache
+
+# --- Utilitaires ---
+python-dotenv
+pytest
+uuid
+pydantic-settings

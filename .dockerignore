@@ -1,0 +1,44 @@
+# Fichiers et dossiers à ignorer lors du build Docker
+
+# Environnement virtuel local
+venv/
+.venv/
+
+# Fichiers de base de données locale (seront créés dans le conteneur)
+chroma_db/
+pdf_storage/
+
+# Fichiers Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Fichiers de développement
+.git/
+.gitignore
+README.md
+frontend.py
+run_rag_cli.py
+
+# Fichiers IDE
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log

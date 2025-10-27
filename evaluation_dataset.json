@@ -1,0 +1,99 @@
+{
+  "description": "Dataset de test pour l'évaluation du système RAG",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "TC001",
+      "question": "Quel est le chiffre d'affaires de l'entreprise en 2023 ?",
+      "expected_answer": "Le chiffre d'affaires est de 100 millions d'euros en 2023.",
+      "context_documents": [
+        "Le chiffre d'affaires de l'entreprise a atteint 100 millions d'euros au cours de l'exercice 2023.",
+        "Les revenus totaux s'élèvent à 100M€ pour la période fiscale 2023."
+      ],
+      "category": "financial_analysis",
+      "difficulty": "easy",
+      "tags": ["finances", "CA", "2023"]
+    },
+    {
+      "id": "TC002",
+      "question": "Quels sont les trois principaux risques mentionnés dans le rapport ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "risk_analysis",
+      "difficulty": "medium",
+      "tags": ["risques", "analyse"]
+    },
+    {
+      "id": "TC003",
+      "question": "Compare les performances financières de 2022 et 2023.",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "comparative_analysis",
+      "difficulty": "hard",
+      "tags": ["comparaison", "évolution", "finances"]
+    },
+    {
+      "id": "TC004",
+      "question": "Quelle est la stratégie de l'entreprise pour les 3 prochaines années ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "strategic_analysis",
+      "difficulty": "medium",
+      "tags": ["stratégie", "futur"]
+    },
+    {
+      "id": "TC005",
+      "question": "L'entreprise a-t-elle des partenariats internationaux ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "partnerships",
+      "difficulty": "easy",
+      "tags": ["partenariats", "international"]
+    },
+    {
+      "id": "TC006",
+      "question": "Quel est le taux de croissance du chiffre d'affaires ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "financial_analysis",
+      "difficulty": "medium",
+      "tags": ["croissance", "finances"]
+    },
+    {
+      "id": "TC007",
+      "question": "Qui sont les principaux concurrents de l'entreprise ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "market_analysis",
+      "difficulty": "medium",
+      "tags": ["concurrence", "marché"]
+    },
+    {
+      "id": "TC008",
+      "question": "Quelle est la politique RSE de l'entreprise ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "sustainability",
+      "difficulty": "medium",
+      "tags": ["RSE", "durabilité"]
+    },
+    {
+      "id": "TC009",
+      "question": "Combien d'employés compte l'entreprise ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "organizational",
+      "difficulty": "easy",
+      "tags": ["effectifs", "RH"]
+    },
+    {
+      "id": "TC010",
+      "question": "Quels sont les projets d'innovation mentionnés ?",
+      "expected_answer": null,
+      "context_documents": [],
+      "category": "innovation",
+      "difficulty": "medium",
+      "tags": ["innovation", "R&D"]
+    }
+  ]
+}

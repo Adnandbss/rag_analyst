@@ -1,0 +1,58 @@
+# Fichiers et dossiers spécifiques au projet Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnement virtuel
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Fichiers de configuration spécifiques à l'IDE
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+
+# Fichiers de dépendances (souvent locaux)
+pip-freeze.txt
+requirements.txt.lock
+pip-log.txt
+
+# Fichiers de build et de distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Fichiers de secrets - TRÈS IMPORTANT
+.env
+*.env
+secrets.toml
+
+# Fichiers de base de données locale
+*.sqlite3
+*.db
+db.sqlite3
+rag_sessions.db
+
+# Dossiers de données
+chroma_db/
+pdf_storage/
+cache/
+reports/
+exports/
+
+# Fichiers de test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Fichiers temporaires
+*.jsonl
+fine_tuning_data*
+evaluation_results*

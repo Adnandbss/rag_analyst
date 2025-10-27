@@ -1,0 +1,107 @@
+{
+  "dashboard": {
+    "title": "RAG Analyst - Dashboard de Monitoring",
+    "tags": ["rag", "ai", "monitoring"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Questions par Minute",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(rag_questions_total[1m])",
+            "legendFormat": "{{mode}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Temps de Réponse Moyen",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(rag_response_duration_seconds_bucket[5m]))",
+            "legendFormat": "p95"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(rag_response_duration_seconds_bucket[5m]))",
+            "legendFormat": "p50"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Score de Confiance Moyen",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "avg(rag_confidence_score)"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Documents Traités",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rag_documents_processed_total)"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 6, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Sessions Actives",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rag_active_sessions"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 12, "y": 8}
+      },
+      {
+        "id": 6,
+        "title": "Taux d'Erreur",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(rag_errors_total[5m])"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 18, "y": 8}
+      },
+      {
+        "id": 7,
+        "title": "Utilisation des Outils de l'Agent",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (tool_name) (rag_agent_tool_usage_total)",
+            "legendFormat": "{{tool_name}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 12}
+      },
+      {
+        "id": 8,
+        "title": "Distribution des Scores d'Évaluation",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "rag_evaluation_score"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 12}
+      }
+    ],
+    "refresh": "10s",
+    "schemaVersion": 16,
+    "version": 1
+  }
+}
