@@ -316,44 +316,6 @@ Activez l'évaluation pour obtenir :
 *   **Observability** : Prometheus, Grafana, distributed tracing ready
 *   **IaC** : Prêt pour Terraform/Kubernetes
 
-## Comment Utiliser ce Projet en Entretien
 
-### Démonstration Live
-
-1.  **Montrez l'architecture** : Expliquez le pipeline RAG et ses composants
-2.  **Demo de l'interface** : Upload d'un PDF, questions/réponses en temps réel
-3.  **Code walkthrough** : Parcourez les parties clés du code
-4.  **Docker demo** : Lancez l'application avec `docker-compose up`
-
-### Points de Discussion
-
-*   **Choix techniques** : Pourquoi LangChain vs alternatives, stratégies de chunking
-*   **Optimisations** : Cache vectoriel, gestion mémoire, performance
-*   **Production readiness** : Monitoring, scaling, sécurité
-*   **Extensions possibles** : Multi-documents, fine-tuning, agents IA
-
-### Axes d'Amélioration (Pour montrer votre vision)
-
-*   **Multi-modalité** : Support d'images, tableaux, graphiques
-*   **Agents autonomes** : Capacité de planification et d'actions
-*   **Fine-tuning** : Modèles spécialisés pour des domaines métier
-*   **Evaluation** : Métriques de qualité, tests A/B
-*   **Déploiement cloud** : Kubernetes, auto-scaling, multi-region
-
----
-
-## Conclusion
-
-Ce projet **RAG-Analyst** représente une application complète et production-ready d'IA générative, couvrant l'ensemble du cycle de développement moderne : du prototype à la production, en passant par les tests automatisés et le déploiement continu.
-
-Il démontre une compréhension approfondie des enjeux techniques et business de l'IA générative, ainsi qu'une maîtrise des outils et pratiques MLOps essentiels pour un poste d'Ingénieur GenAI/LLM.
-
-**Points forts du projet :**
-- Pipeline RAG complet et fonctionnel
-- Architecture modulaire et extensible  
-- Interface utilisateur moderne et intuitive
-- Infrastructure Docker pour le déploiement
-- CI/CD automatisé avec GitHub Actions
-- Documentation technique complète
 
 Ce projet constitue une base solide pour démontrer vos compétences en entretien et peut servir de fondation pour des projets plus complexes intégrant des agents IA, du fine-tuning, ou des architectures multi-modales.
