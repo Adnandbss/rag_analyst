@@ -318,4 +318,3 @@ Activez l'évaluation pour obtenir :
 
 
 
-Ce projet constitue une base solide pour démontrer vos compétences en entretien et peut servir de fondation pour des projets plus complexes intégrant des agents IA, du fine-tuning, ou des architectures multi-modales.
